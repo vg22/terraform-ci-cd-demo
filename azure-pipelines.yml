@@ -20,7 +20,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - task: TerraformInstaller@0
+  - task: TerraformInstaller
     displayName: 'Install Terraform version $(TF-Version)'
     inputs:
       terraformVersion: $(TF-Version)
