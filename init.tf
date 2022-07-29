@@ -51,7 +51,15 @@ provider "helm" {
 
 terraform {
   required_version = ">= 0.12"
-  backend "azurerm" {}
+  backend "azurerm" {
+ 
+    resource_group_name  = "terraformstate"
+    storage_account_name = "tfstoragevgdevopsdemo"
+    container_name       = "tfstate"
+    key                  = "prod.terraform.tfstate"
+  
+
+  }
 }
 
 data "azurerm_client_config" "current" {}
