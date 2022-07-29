@@ -23,7 +23,7 @@ jobs:
   - template: templates/terraform.yml
     parameters:
       saName: $(sa-name)
-      blobName: $(blob-name)
+      blobName: 'tf-state'
       saKey: $(sa-key)
       stateKey: $(key)
       workspace: $(Infra-WS)
