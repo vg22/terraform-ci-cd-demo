@@ -13,6 +13,9 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
+  - script: |
+      echo $(sa-name)
+      echo $(blob-name)
   - task: TerraformInstaller@0
     displayName: 'Install Terraform version $(TF-Version)'
     inputs:
