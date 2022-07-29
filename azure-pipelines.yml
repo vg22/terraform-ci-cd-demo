@@ -20,7 +20,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - task: TerraformInstaller
+  - task: TerraformInstaller@1.2.6
     displayName: 'Install Terraform version $(TF-Version)'
     inputs:
       terraformVersion: $(TF-Version)
@@ -42,7 +42,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - task: TerraformInstaller
+  - task: TerraformInstaller@1.2.6
     displayName: 'Install Terraform version $(TF-Version)'
     inputs:
       terraformVersion: $(TF-Version)
@@ -64,7 +64,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - task: TerraformInstaller
+  - task: TerraformInstaller@1.2.6
     displayName: 'Install Terraform version $(TF-Version)'
     inputs:
       terraformVersion: $(TF-Version)
@@ -86,7 +86,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - task: TerraformInstaller
+  - task: TerraformInstaller@1.2.6
     displayName: 'Install Terraform version $(TF-Version)'
     inputs:
       terraformVersion: $(TF-Version)
